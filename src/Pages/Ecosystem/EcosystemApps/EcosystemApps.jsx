@@ -14,6 +14,7 @@ export function EcosystemApps(){
     return(
         <div className="ecosystem-apps">
         <Navigator />
+        {/* The /:id use used here with the useParams hook to redirect and dynamically render the cards */}
         <div className="ecosystem-apps-container">
         {id === "defi" && <Defi />}
         {id === "games" && <Games />}
@@ -22,6 +23,7 @@ export function EcosystemApps(){
         {id === "tools" && <Tools />}
         {id === "wallet" && <Wallet />}
         </div>
+        {/* The /:id == null because in an irl scenario it would of been /ecosystem/overview */}
         {id == null && <OverviewScene />}
       </div>
     );

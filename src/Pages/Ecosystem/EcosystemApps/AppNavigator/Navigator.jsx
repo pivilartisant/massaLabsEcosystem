@@ -52,6 +52,8 @@ export function Navigator(){
     )
 }
 
+//Refactor for the following code above but because of the routing it does not function properly
+
 // import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 
