@@ -7,7 +7,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { useGLTF } from '@react-three/drei'
 
 export function MassaNodeFour(props) {
-  const { nodes, materials } = useGLTF('/public/models/massaNodes.gltf');
+  const { nodes, materials } = useGLTF('/dist/models/massaNodes.gltf');
   const ref = useRef();
 
   const [materialColor, setMaterialColor] = useState("#fff");
