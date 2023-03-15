@@ -15,7 +15,6 @@
 .App{
   max-width: 1040px;
   height: 100%;
-  border: solid 1px chartreuse;
 }
 
 }
@@ -36,6 +35,7 @@
   .App{
     max-width: 85%;
     height: 100%;
+
   }
   
   }

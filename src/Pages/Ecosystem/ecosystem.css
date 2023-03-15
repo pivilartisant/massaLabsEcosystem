@@ -28,13 +28,12 @@ Header
 */
 
 .ecosystem{
-    padding:1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .ecosystem-header{
-    border: solid 1px red;
     margin: 0px 0px 30px 0px;
 }
 
@@ -62,8 +61,6 @@ Navigator
     flex-shrink: 1;
     flex-wrap: wrap;
     padding:1rem 0rem 1rem 0rem;
-
-    border: solid 1px blue;
 }
 
 .button{
@@ -118,9 +115,6 @@ Overview Canvas
     height: 600px;
 
     margin: 30px 0px 30px 0px;
-
-    border: solid 1px #e74e4e;
-
 }
 
 .overview-canvas-container{
@@ -129,8 +123,6 @@ Overview Canvas
     background-color: #17202A;
     border-radius: 50px;
     box-shadow: 0px 4px 8px 4px #0F1318;
-
-    border: solid 1px #e74e4e;
 }
 
 .overview-tuto-containter{
