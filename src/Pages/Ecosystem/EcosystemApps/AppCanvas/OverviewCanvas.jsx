@@ -5,7 +5,9 @@ import { MassaRoute } from "./MassaRoute";
 
 
 
-
+//The is the 3D rendering component which is a classsic three canvas
+//scroll is disabled on orbit for better UX
+//The 3D model is rendered in the MassaRoute component
 
 export  function OverviewCanvas() {
   return (
@@ -16,8 +18,6 @@ export  function OverviewCanvas() {
           <pointLight position={[4, 10, 10]} intensity={0.7}/>
           <pointLight position={[-4, 10, 10]} intensity={0.3}/>
           <MassaRoute />
-          {/* <axesHelper/>
-          <gridHelper/> */}
           <OrbitControls enableZoom={false}/>
         </Suspense> 
       </Canvas>
