@@ -2,9 +2,11 @@ import bearby from "../../../../assets/img/bearby.png";
 import energy8 from "../../../../assets/img/energy8.png"
 import arrow from "../../../../assets/img/linkArrow.png";
 import wallet from "../../../../assets/img/space_wallet.png";
+import { OverviewCanvas } from "../AppCanvas/OverviewCanvas";
 export function Wallet(){
     return(
         <div className="card">
+            
             <div className="card-container">
                 <img className="card-img" src={bearby} alt="" />
 

@@ -1,34 +1,35 @@
-import bearby from "../../../../assets/img/bearby.png";
-import energy8 from "../../../../assets/img/energy8.png"
+import tonana from "../../../../assets/img/tonana.png";
+import massex from "../../../../assets/img/massex.png"
+import kyve from "../../../../assets/img/kyve.png";
 import arrow from "../../../../assets/img/linkArrow.png";
-import wallet from "../../../../assets/img/space_wallet.png";
 
 export function Tools(){
     return(
         <div className="card">
         <div className="card-container">
-            <img className="card-img" src={bearby} alt="" />
+            <img className="card-img" src={massex} alt="massex" />
 
             <div className="card-text-container">
-            <h6 className="card-text-title">Bearby</h6>
-            <p className="card-text-desc">Bearby is a web 3 wallet dedicated to  Massa. It has extended network settings and it never collects users’ data.</p>
+            <h6 className="card-text-title">Massexplo</h6>
+            <p className="card-text-desc">Massexplo allows you to track and explore all the transactions taking place on the Massa blockchain.
+                  </p>
             <p className="card-text-link-dec">
-                visit <a className="card-text-link" href="https://bearby.io/" target={"_blank"}>bearby.io </a>  
+                visit <a className="card-text-link" href="https://massexplo.io/" target={"_blank"}>massexplo.io </a>  
                 <img className="card-link-arrow" src={arrow} alt="link arrow" />
             </p>
             </div>
         </div>
         {/* different card */}
         <div className="card-container">
-            <img className="card-img" src={energy8} alt="" />
+            <img className="card-img" src={kyve} alt="kyve" />
 
             <div className="card-text-container">
-            <h6 className="card-text-title">Energy8 Wallet</h6>
+            <h6 className="card-text-title">Kyve</h6>
             <p className="card-text-desc">
-                A friendly crypto multichain wallet for web3 on Massa, Solana, Polygon and others in the future.
+            KYVE allows developers and applications to store and retrieve any data stream.
                 </p>
             <p className="card-text-link-dec">
-                visit <a className="card-text-link" href="https://chrome.google.com/webstore/detail/energy8-wallet/mdnaglckomeedfbogeajfajofmfgpoae" target={"_blank"}>energy8.io </a>  
+                visit <a className="card-text-link" href="https://www.kyve.network/" target={"_blank"}>kyve.network </a>  
                 <img className="card-link-arrow" src={arrow} alt="link arrow" />
             </p>
             </div>
@@ -36,17 +37,17 @@ export function Tools(){
 
          {/* different card */}
          <div className="card-container">
-            <img className="card-img" src={wallet} alt="" />
+            <img className="card-img" src={tonana} alt="tonana" />
 
             <div className="card-text-container">
              <h6 className="card-text-title">
-                Space Wallet
+                Tonana
              </h6>
                 <p className="card-text-desc">
-                    The first mobile wallet that allows to send and receive tokens on Massa.
+                Tonana cross-chain bridge uses a lock-and-mint model for moving value between chains as well as wrapped assets.
                 </p>
             <p className="card-text-link-dec">
-                visit <a className="card-text-link" href="https://github.com/bacanlabs/spacewallet/releases/tag/Android" target={"_blank"}>Github </a>  
+                visit <a className="card-text-link" href="https://tonana.org/" target={"_blank"}>Tonana.org </a>  
                 <img className="card-link-arrow" src={arrow} alt="link arrow" />
             </p>
             </div>

@@ -3,7 +3,7 @@ import { Navigator } from "./AppNavigator/Navigator";
 import { useParams } from "react-router-dom";
 import { Defi } from "./AppCards/Defi";
 import { Games } from "./AppCards/Games";
-import { Nft } from "./AppCards/NFT";
+import { Nft } from "./AppCards/Nft";
 import { Social } from "./AppCards/Social";
 import { Tools } from "./AppCards/Tools";
 import { Wallet } from "./AppCards/Wallet";

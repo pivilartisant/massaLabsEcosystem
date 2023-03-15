@@ -122,7 +122,8 @@ Overview Canvas
 }
 
 .overview-canvas-container{
-    width: 100%;
+    min-width: 100px;
+    max-width: 790px;
     height: 600px;
     background-color: #17202A;
     border-radius: 50px;
@@ -187,6 +188,7 @@ Cards
 
 .card{
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 0px 30px 0px;
 
     border: solid 1px chartreuse;
@@ -198,6 +200,7 @@ Cards
     display: flex;
     flex-direction: column;
     margin-right: 24px;
+    margin-top: 24px;
 
     width: 300px;
     min-height: 300px;
@@ -229,7 +232,7 @@ Cards
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .card-text-title{
@@ -246,6 +249,7 @@ Cards
     font-family: TTdemibold;
 
     margin: 10px 0px 10px 0px;
+    height: 80px;
 }
 
 .card-text-link-dec{
