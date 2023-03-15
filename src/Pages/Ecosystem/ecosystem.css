@@ -98,6 +98,8 @@ top:-1px;
 
     transition: color 0.6s ease-in-out;
     transition: background-color 0.4s ease-in-out;
+
+    border: 1px solid #e74e4e;
 }
 
 .passive-button{
@@ -421,6 +423,8 @@ Ecosystem Mobile
     
         transition: color 0.6s ease-in-out;
         transition: background-color 0.4s ease-in-out;
+
+        border: 1px solid #e74e4e;
     }
     
     .passive-button{
