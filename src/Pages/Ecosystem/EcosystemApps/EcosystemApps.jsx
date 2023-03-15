@@ -14,12 +14,14 @@ export function EcosystemApps(){
     return(
         <div className="ecosystem-apps">
         <Navigator />
+        <div className="ecosystem-apps-container">
         {id === "defi" && <Defi />}
         {id === "games" && <Games />}
         {id === "nft" && <Nft />}
         {id === "social" && <Social />}
         {id === "tools" && <Tools />}
         {id === "wallet" && <Wallet />}
+        </div>
         {id == null && <OverviewScene />}
       </div>
     );

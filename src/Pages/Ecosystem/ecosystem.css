@@ -21,7 +21,7 @@ a{
 Ecosystem Desktop
 */
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:1000px) {
 
 /*
 Header
@@ -31,6 +31,7 @@ Header
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .ecosystem-header{
@@ -81,7 +82,7 @@ Navigator
     cursor: pointer;
 
     border-radius: 100px;
-    border: 1px solid #e74e4e;
+    border: 1px solid var(--main-red);
     transition: position top 1s ease-in-out;
 }
 
@@ -99,12 +100,12 @@ top:-1px;
     transition: color 0.6s ease-in-out;
     transition: background-color 0.4s ease-in-out;
 
-    border: 1px solid #e74e4e;
+    border: 1px solid var(--main-red);
 }
 
 .passive-button{
-    background-color: #e74e4e;
-    color: #fff;
+    background-color: var(--main-red);
+    color: var(--font-color);
     border: none;
 }
 
@@ -123,9 +124,9 @@ Overview Canvas
 .overview-canvas-container{
     min-width: 100px;
     height: 600px;
-    background-color: #17202A;
+    background-color: var(--bg-color);
     border-radius: 50px;
-    box-shadow: 0px 4px 8px 4px #0F1318;
+    box-shadow: 0px 4px 8px 4px var(--boxshadow-color);
 }
 
 .overview-tuto-containter{
@@ -160,8 +161,11 @@ Overview Canvas
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    border: solid 1px #e74e4e;
+    border: solid 1px var(--main-red);
     border-radius: 100%;
+
+    position: relative;
+    top: 80px;
     }
 
 .help{
@@ -172,35 +176,35 @@ Overview Canvas
 Cards
 */
 
+.ecosystem-apps-container{
+    width: 100%;
+}
+
 .card{
-    display: flex;
-    flex-wrap: wrap;
     margin: 30px 0px 30px 0px;
-    max-width: 100%;
-    padding:1rem 0rem 1rem 0rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px,1fr));
+    gap: 24px;
+    max-width: fit-content;
 }
 
 .card-container{
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
-    margin-top: 24px;
 
-    width: 300px;
-    min-height: 300px;
-    background: #17202A;
+    width: 260px;
+    min-height: 260px;
+    background: var(--bg-color);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: #17202A;
     transition: box-shadow 0.3s ease-in-out;
     cursor: default;
-
-    border: solid 1px red;
 }
 
 .card-container:hover{
-    background: #17202A;
+    background: var(--bg-color);
     box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.25);
 }
 
@@ -220,7 +224,7 @@ Cards
 }
 
 .card-text-title{
-    color:#E24449;
+    color:var(--main-red);
     font-size: 2rem;
     font-family: TTbold;
 
@@ -228,7 +232,7 @@ Cards
 }
 
 .card-text-desc{
-    color:#fff;
+    color: var(--font-color);
     font-size: 1rem;
     font-family: TTdemibold;
 
@@ -237,19 +241,19 @@ Cards
 }
 
 .card-text-link-dec{
-    color:#E24449;
+    color:var(--main-red);
     font-size: 1.2rem;
     font-family: TTbold;
 }
 
 .card-text-link{
-    color: #fff;
+    color: var(--font-color);
     font-size: 1.2rem;
     font-family: TTbold;
     transition: color 0.2s ease-in-out
 }
 .card-text-link:hover{
-    color: #E24449;
+    color: var(--main-red);
 }
 /*
 CTA
@@ -267,12 +271,14 @@ CTA
 
     background: linear-gradient(96.41deg, #3744F2 0%, #DB444E 100%);
     border-radius: 50px;
+
+    box-shadow: 0px 4px 8px 4px var(--boxshadow-color)
 }
 
 .cta-button-transparent{
    
     background-color: transparent;
-    color: #fff;
+    color: var(--font-color);
 
     transition: color 0.6s ease-in-out;
     transition: background-color 0.4s ease-in-out;
@@ -311,7 +317,7 @@ CTA
     cursor: pointer;
 
     border-radius: 100px;
-    border: 1px solid #e74e4e;
+    border: 1px solid var(--main-red);
 
     transition: padding 0.2s ease-in-out;
     transition: padding 0.2s ease-in-out;
@@ -322,11 +328,336 @@ CTA
 }
 
 .cta-button-fill{
-    background-color: #e74e4e;
-    color: #fff;
+    background-color: var(--main-red);
+    color: var(--font-color);
     border: none;
 }
 }
+
+
+
+
+
+
+
+
+
+/*
+Ecosystem tablet
+*/
+
+@media screen and (min-width:700px)and (max-width:1000px) {
+
+    /*
+    Header
+    */
+    
+    .ecosystem{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ecosystem-header{
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .ecosystem-header-title{
+        font-family: TTregular;
+        font-size: 4.6rem;
+    }
+    
+    .ecosystem-header-desc{
+        font-family: TTregular;
+        font-size: 1.8rem;
+    }
+    
+    /*
+    Navigator
+    */
+    
+    .ecosystem-apps{
+        margin: 30px 0px 30px 0px;
+    }
+    
+    .navigator{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        padding:1rem 0rem 1rem 0rem;
+    }
+    
+    .button{
+        display: flex;
+        width:100px;
+        height: 40px;
+    
+        margin: 3px 12px 3px 0px;
+    
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+    
+        font-family: TTdemibold;
+    
+        font-size: 16px;
+    
+        cursor: pointer;
+    
+        border-radius: 100px;
+        border: 1px solid var(--main-red);
+        transition: position top 1s ease-in-out;
+    }
+    
+    .button:hover{
+    position: relative;
+    top:-1px;
+    
+    }
+    
+    .active-button{
+       
+        background-color: transparent;
+        color: #e74e4e;
+    
+        transition: color 0.6s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    
+        border: 1px solid var(--main-red);
+    }
+    
+    .passive-button{
+        background-color: var(--main-red);
+        color: var(--font-color);
+        border: none;
+    }
+    
+    /*
+    Overview Canvas
+    */
+    
+    .overview-scene{
+        width: 100%;
+        height: 600px;
+    
+        margin: 30px 0px 30px 0px;
+        cursor: pointer;
+    }
+    
+    .overview-canvas-container{
+        min-width: 100px;
+        height: 600px;
+        background-color: var(--bg-color);
+        border-radius: 50px;
+        box-shadow: 0px 4px 8px 4px var(--boxshadow-color);
+    }
+    
+    .overview-tuto-containter{
+        position: relative;
+        top: -150px;
+        left:0px;
+    
+        width: 300px;
+        display: flex;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    
+    .overview-help{
+        display: flex;
+    }
+    
+    .overview-help-none{
+        display: none;
+    }
+    .overview-help-img{
+        width: 100px;
+    }
+    
+    .overview-help-text{
+        font-family: TTregular;
+        font-size: 1rem;
+    }
+    
+    .help-container-display{
+        padding: 2px 18px 2px 18px;
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        border: solid 1px var(--main-red);
+        border-radius: 100%;
+    
+        position: relative;
+        top: 80px;
+        }
+    
+    .help{
+        font-size: 2rem;
+    }
+    
+    /*
+    Cards
+    */
+    
+    .ecosystem-apps-container{
+        width: 100%;
+    }
+    
+    .card{
+        margin: 30px 0px 30px 0px;
+    
+        display: grid;
+        grid-template-columns: repeat(2, minmax(80px,1fr));
+        gap: 24px;
+        max-width: fit-content;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    
+        width: 260px;
+        min-height: 260px;
+        background: var(--bg-color);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: default;
+    }
+    
+    .card-container:hover{
+        background: var(--bg-color);
+        box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.25);
+    }
+    
+    .card-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .card-text-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .card-text-title{
+        color:var(--main-red);
+        font-size: 2rem;
+        font-family: TTbold;
+    
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .card-text-desc{
+        color: var(--font-color);
+        font-size: 1rem;
+        font-family: TTdemibold;
+    
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+    
+    .card-text-link-dec{
+        color:var(--main-red);
+        font-size: 1.2rem;
+        font-family: TTbold;
+    }
+    
+    .card-text-link{
+        color: var(--font-color);
+        font-size: 1.2rem;
+        font-family: TTbold;
+        transition: color 0.2s ease-in-out
+    }
+    .card-text-link:hover{
+        color: var(--main-red);
+    }
+    /*
+    CTA
+    */
+    
+    .cta{
+        height:fit-content;
+        margin: 30px 0px 30px 0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        padding: 20px 0px 40px 80px;
+    
+        background: linear-gradient(96.41deg, #3744F2 0%, #DB444E 100%);
+        border-radius: 50px;
+    
+        box-shadow: 0px 4px 8px 4px var(--boxshadow-color)
+    }
+    
+    .cta-button-transparent{
+       
+        background-color: transparent;
+        color: var(--font-color);
+    
+        transition: color 0.6s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+    
+    .cta-header-container{
+        padding: 1rem 0rem ;
+    }
+    
+    .cta-header-title{
+        font-family: TTregular;
+        font-size: 4rem;
+    }
+    
+    
+    .cta-buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cta-button{
+        display: flex;
+        width:fit-content;
+        height: fit-content;
+        padding: 6px 15px 6px 15px;
+    
+        margin: 0px 12px 0px 0px;
+    
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+    
+        font-family: TTdemibold;
+    
+        font-size: 16px;
+    
+        cursor: pointer;
+    
+        border-radius: 100px;
+        border: 1px solid var(--main-red);
+    
+        transition: padding 0.2s ease-in-out;
+        transition: padding 0.2s ease-in-out;
+    }
+    
+    .cta-button:hover{
+        padding: 6px 20px 6px 20px;
+    }
+    
+    .cta-button-fill{
+        background-color: var(--main-red);
+        color: var(--font-color);
+        border: none;
+    }
+    }
 
 
 
@@ -382,10 +713,17 @@ Ecosystem Mobile
         display: flex;
         flex-direction: row;
         flex-shrink: 1;
+        min-width: 100%;
         /* flex-wrap: wrap; */
         padding:1rem 0rem 1rem 0rem;
 
         overflow: scroll;
+        position: sticky;
+        top: 0;
+        position: -webkit-sticky;
+        /* background-color: rgb(28,38,52);
+        background: linear-gradient(90deg, rgba(28,38,52,1) 0%, rgba(15,19,24,1) 100%); */
+        z-index: 1;
     }
     
     .button{
@@ -418,17 +756,17 @@ Ecosystem Mobile
     .active-button{
        
         background-color: transparent;
-        color: #e74e4e;
+        color: var(--main-red);
     
         transition: color 0.6s ease-in-out;
         transition: background-color 0.4s ease-in-out;
 
-        border: 1px solid #e74e4e;
+        border: 1px solid var(--main-red);
     }
     
     .passive-button{
-        background-color: #e74e4e;
-        color: #fff;
+        background-color: var(--main-red);
+        color: var(--font-color);
         border: none;
     }
     
@@ -446,9 +784,9 @@ Ecosystem Mobile
 .overview-canvas-container{
     min-width: 100%;
     height: 400px;
-    background-color: #17202A;
+    background-color: var(--bg-color);
     border-radius: 50px;
-    box-shadow: 0px 4px 8px 4px #0F1318;
+    box-shadow: 0px 4px 8px 4px var(--boxshadow-color)
 }
     
 .overview-tuto-containter{
@@ -458,8 +796,7 @@ Ecosystem Mobile
     
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    padding: 0px 6px 0px 6px;
+    padding: 0px 0px 0px 10px;
 }
     
     
@@ -488,7 +825,10 @@ Ecosystem Mobile
      cursor: pointer;
      border-radius: 100%;
 
-     border: solid 1px #E24449;
+     border: solid 1px var(--main-red);
+     position: relative;
+     top: 10px;
+     left: 10px;
      }
  
  .help{
@@ -518,17 +858,16 @@ Ecosystem Mobile
     
         width: 300px;
         min-height: 300px;
-        background: #17202A;
+        background: var(--bg-color);
         border-radius: 20px;
         padding: 20px;
         box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background: #17202A;
         transition: box-shadow 0.3s ease-in-out;
         cursor: default;
     }
     
     .card-container:hover{
-        background: #17202A;
+        background: var(--bg-color);
         box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.25);
     }
     
@@ -548,7 +887,7 @@ Ecosystem Mobile
     }
     
     .card-text-title{
-        color:#E24449;
+        color:var(--main-red);
         font-size: 2rem;
         font-family: TTbold;
     
@@ -556,7 +895,7 @@ Ecosystem Mobile
     }
     
     .card-text-desc{
-        color:#fff;
+        color:var(--font-color);
         font-size: 1rem;
         font-family: TTdemibold;
     
@@ -565,19 +904,19 @@ Ecosystem Mobile
     }
     
     .card-text-link-dec{
-        color:#E24449;
+        color:var(--main-red);
         font-size: 1.2rem;
         font-family: TTbold;
     }
     
     .card-text-link{
-        color: #fff;
+        color: var(--font-color);
         font-size: 1.2rem;
         font-family: TTbold;
         transition: color 0.2s ease-in-out
     }
     .card-text-link:hover{
-        color: #E24449;
+        color: var(--main-red);
     }
     /*
     CTA
@@ -595,12 +934,13 @@ Ecosystem Mobile
 
         background: linear-gradient(96.41deg, #3744F2 0%, #DB444E 100%);
         border-radius: 50px;
+        box-shadow: 0px 4px 8px 4px var(--boxshadow-color)
     }
     
     .cta-button-transparent{
        
         background-color: transparent;
-        color: #fff;
+        color: var(--font-color);
     
         transition: color 0.6s ease-in-out;
         transition: background-color 0.4s ease-in-out;
@@ -643,7 +983,7 @@ Ecosystem Mobile
 
         transition: padding 0.2s ease-in-out;
 
-        border: solid 1px #E24449;
+        border: solid 1px var(--main-red);
     }
     
     .cta-button:hover{
@@ -651,8 +991,8 @@ Ecosystem Mobile
     }
     
     .cta-button-fill{
-        background-color: #e74e4e;
-        color: #fff;
+        background-color: var(--main-red);
+        color: var(--font-color);
         border: none;
     }
     }

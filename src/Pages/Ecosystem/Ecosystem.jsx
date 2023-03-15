@@ -8,7 +8,7 @@ export function Ecosystem(){
         <div className="ecosystem">
             <Header/>
             <EcosystemApps/>
-            <Cta/>
+            <Cta/>  
         </div>
     )
 }

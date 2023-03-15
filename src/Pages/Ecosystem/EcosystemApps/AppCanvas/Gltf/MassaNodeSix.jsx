@@ -24,7 +24,7 @@ export function MassaNodeSix(props) {
             }
             onPointerLeave={
             ()=>handleColor()
-          } geometry={nodes.sphere6a.geometry} material={materials['Material.006']} position={[2.56, -1.51, 4.35]} scale={-1.28} />
+          } geometry={nodes.sphere6a.geometry} material-color={"#17202A"} position={[2.56, -1.51, 4.35]} scale={-1.28} />
     </group>
   )
 }

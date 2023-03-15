@@ -11,13 +11,15 @@ export function Games(){
             <img className="card-img" src={meta} alt="metarchy" />
 
             <div className="card-text-container">
-            <h6 className="card-text-title">Metarchy</h6>
-            <p className="card-text-desc">Metarchy is a Turn-based strategy game with micro-economy, where you must predict 
-                    the actions of opponents.</p>
-            <p className="card-text-link-dec">
-                visit <a className="card-text-link" href="https://metarchy.space/" target={"_blank"}>matarchy.space </a>  
+                <h6 className="card-text-title">Metarchy</h6>
+                    <p className="card-text-desc">Metarchy is a Turn-based strategy game with micro-economy, where you must predict 
+                        the actions of opponents.
+                    </p>
+            <p className="card-text-link-dec">visit 
+                <a className="card-text-link" href="https://metarchy.space/" target={"_blank"}>matarchy.space </a>  
                 <img className="card-link-arrow" src={arrow} alt="link arrow" />
             </p>
+
             </div>
         </div>
     

@@ -24,7 +24,7 @@ export function MassaNodeFour(props) {
             }
             onPointerLeave={
             ()=>handleColor()
-          } geometry={nodes.sphere4a.geometry} material={materials['Material.006']} position={[2.52, -0.53, -4.23]} scale={-1.28} />
+          } geometry={nodes.sphere4a.geometry} material-color={"#17202A"} position={[2.52, -0.53, -4.23]} scale={-1.28} />
     </group>
   )
 }
