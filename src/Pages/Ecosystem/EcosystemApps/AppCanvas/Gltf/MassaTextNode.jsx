@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function MassaTextNode(props) {
-  const { nodes, materials } = useGLTF('/dist/models/massaTextNode.gltf')
+  const { nodes, materials } = useGLTF('/massaTextNode.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Text.geometry} material={materials['Material.002']} position={[-2.78, -0.55, 4.53]} rotation={[Math.PI / 2, 0, 0.89]} />
