@@ -6,8 +6,7 @@ export function Defi(){
     return(
         <div className="card">
         <div className="card-container">
-        <img className="card-img" src={dusa} alt="dusa" />
-
+            <img className="card-img" src={dusa} alt="dusa" />
         <div className="card-text-container">
         <h6 className="card-text-title">Dusa</h6>
         <p className="card-text-desc">The Dusa Protocol is the first DEX with decentralized frontend and automatic orders.</p>
