@@ -21,6 +21,8 @@ a{
 Ecosystem Desktop
 */
 
+@media screen and (min-width:700px) {
+
 /*
 Header
 */
@@ -132,30 +134,30 @@ Overview Canvas
 }
 
 .overview-tuto-containter{
-position: relative;
-top: -260px;
-left:0px;
+    position: relative;
+    top: -150px;
+    left:0px;
 
-width: 380px;
-display: flex;
-}
-
-.overview-img-display{
-display: initial;
-font-family: TTregular;
-font-size: 1rem;
-position: relative;
-left: -30px;
-display: inline;
+    width: 300px;
+    display: flex;
+    padding: 0px 10px 0px 10px;
 }
 
 
-.overview-img-none{
+.overview-help{
+    display: flex;
+}
+
+.overview-help-none{
     display: none;
 }
-    
-.overview-text-none{
-    display: none;
+.overview-help-img{
+    width: 100px;
+}
+
+.overview-help-text{
+    font-family: TTregular;
+    font-size: 1rem;
 }
 
 .help-container-display{
@@ -163,10 +165,6 @@ display: inline;
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    position: relative;
-    top: 190px;
-    left: 20px;
-    
     border: solid 1px #e74e4e;
     border-radius: 100%;
     }
@@ -335,3 +333,331 @@ CTA
     color: #fff;
     border: none;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Ecosystem Mobile
+*/
+
+@media screen and (max-width:700px) {
+
+    /*
+    Header
+    */
+    
+    .ecosystem{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ecosystem-header{
+       display: initial;
+    }
+    
+    .ecosystem-header-title{
+        font-family: TTregular;
+        font-size: 4rem;
+    }
+    
+    .ecosystem-header-desc{
+        font-family: TTregular;
+        font-size: 1.4rem;
+    }
+    
+    /*
+    Navigator
+    */
+    
+    .ecosystem-apps{
+        margin: 15px 0px 15px 0px;
+    }
+    
+    .navigator{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 1;
+        /* flex-wrap: wrap; */
+        padding:1rem 0rem 1rem 0rem;
+
+        overflow: scroll;
+    }
+    
+    .button{
+        display: flex;
+        width:100px;
+        height: 40px;
+    
+        margin: 3px 12px 3px 0px;
+    
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+    
+        font-family: TTdemibold;
+    
+        font-size: 1rem;
+    
+        cursor: pointer;
+    
+        border-radius: 100px;
+        transition: position top 1s ease-in-out;
+    }
+    
+    .button:hover{
+    position: relative;
+    top:-1px;
+    
+    }
+    
+    .active-button{
+       
+        background-color: transparent;
+        color: #e74e4e;
+    
+        transition: color 0.6s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+    
+    .passive-button{
+        background-color: #e74e4e;
+        color: #fff;
+        border: none;
+    }
+    
+    /*
+    Overview Canvas
+    */
+    
+.overview-scene{
+    width: 100%;
+    height: 400px;
+
+    margin: 15px 0px 15px 0px;
+}
+
+.overview-canvas-container{
+    min-width: 100%;
+    height: 400px;
+    background-color: #17202A;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px 4px #0F1318;
+}
+    
+.overview-tuto-containter{
+    position: relative;
+    top: -80px;
+    left:0px;
+    
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 6px 0px 6px;
+}
+    
+    
+.overview-help{
+    display: flex;
+}
+    
+.overview-help-none{
+    display: none;
+}
+
+.overview-help-img{
+    display: none;
+}
+
+.overview-help-text{
+    font-family: TTregular;
+    font-size: 0.8rem;
+    width: 200px;
+}
+        
+.help-container-display{
+    padding: 2px 14px 2px 14px;
+    width: fit-content;
+     height: fit-content;
+     cursor: pointer;
+     border-radius: 100%;
+
+     border: solid 1px #E24449;
+     }
+ 
+ .help{
+     font-size: 1.4rem;
+ }
+
+    /*
+    Cards
+    */
+    
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px 15px 0px;
+    
+
+        padding:1rem 0rem 1rem 0rem;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        margin-right: 24px;
+        margin-top: 24px;
+    
+        width: 300px;
+        min-height: 300px;
+        background: #17202A;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #17202A;
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: default;
+    }
+    
+    .card-container:hover{
+        background: #17202A;
+        box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.25);
+    }
+    
+    .card-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .card-text-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .card-text-title{
+        color:#E24449;
+        font-size: 2rem;
+        font-family: TTbold;
+    
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .card-text-desc{
+        color:#fff;
+        font-size: 1rem;
+        font-family: TTdemibold;
+    
+        margin: 10px 0px 10px 0px;
+        height: 80px;
+    }
+    
+    .card-text-link-dec{
+        color:#E24449;
+        font-size: 1.2rem;
+        font-family: TTbold;
+    }
+    
+    .card-text-link{
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: TTbold;
+        transition: color 0.2s ease-in-out
+    }
+    .card-text-link:hover{
+        color: #E24449;
+    }
+    /*
+    CTA
+    */
+    
+    .cta{
+        height:fit-content;
+        margin: 30px 0px 30px 0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        padding: 20px;
+
+        background: linear-gradient(96.41deg, #3744F2 0%, #DB444E 100%);
+        border-radius: 50px;
+    }
+    
+    .cta-button-transparent{
+       
+        background-color: transparent;
+        color: #fff;
+    
+        transition: color 0.6s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+    
+    .cta-header-container{
+        padding: 1rem 0rem ;
+    }
+    
+    .cta-header-title{
+        font-family: TTregular;
+        font-size: 2.4rem;
+    }
+    
+    
+    .cta-buttons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cta-button{
+        display: flex;
+        width:fit-content;
+        height: fit-content;
+        padding: 6px 15px 6px 15px;
+    
+        margin: 10px 0px 10px 0px;
+    
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+    
+        font-family: TTdemibold;
+    
+        font-size: 16px;
+    
+        cursor: pointer;
+    
+        border-radius: 100px;
+
+        transition: padding 0.2s ease-in-out;
+
+        border: solid 1px #E24449;
+    }
+    
+    .cta-button:hover{
+        padding: 6px 20px 6px 20px;
+    }
+    
+    .cta-button-fill{
+        background-color: #e74e4e;
+        color: #fff;
+        border: none;
+    }
+    }

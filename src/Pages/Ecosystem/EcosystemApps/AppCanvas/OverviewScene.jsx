@@ -3,22 +3,24 @@ import massaLove from "../../../../assets/img/massa_love.png";
 import { useState } from "react";
 
 export function OverviewScene(){
-    const [activeClass, setActiveClass] = useState("overview-img-none")
+    const [activeClass, setActiveClass] = useState("overview-help-none")
     // if helpBtn ? : ;
 
     const handleBtnClick =()=>{
-        if (activeClass === "overview-img-none" ? setActiveClass("overview-img-display") :  setActiveClass("overview-img-none"));
+        if (activeClass === "overview-help-none" ? setActiveClass("overview-help") :  setActiveClass("overview-help-none"));
     }
 
     return(
         <div className="overview-scene">
             <OverviewCanvas/>
             <div className="overview-tuto-containter">
-            <img className={activeClass} src={massaLove} alt="" />
-            <p className={activeClass}>Use your mouse to explore our ecosystem <br></br> & click on the nodes to see who uses our blockchain </p>
-            <div className={"help-container-display"} onClick={handleBtnClick} >
-                <p className="help" >?</p>
-            </div>
+                <div className={activeClass}>
+                <img className="overview-help-img" src={massaLove} alt="" />
+                <p className="overview-help-text" >Use your mouse to explore our ecosystem & click on the nodes to see who uses our blockchain </p>
+                </div>
+                <div className={"help-container-display"} onClick={handleBtnClick} >
+                    <p className="help" >?</p>
+                </div>
             </div>
         </div>
 
