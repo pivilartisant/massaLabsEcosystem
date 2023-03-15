@@ -123,7 +123,6 @@ Overview Canvas
 
 .overview-canvas-container{
     min-width: 100px;
-    max-width: 790px;
     height: 600px;
     background-color: #17202A;
     border-radius: 50px;
@@ -137,31 +136,25 @@ position: relative;
 top: -260px;
 left:0px;
 
-width: 420px;
+width: 380px;
 display: flex;
 }
 
 .overview-img-display{
 display: initial;
+font-family: TTregular;
+font-size: 1rem;
+position: relative;
+left: -30px;
+display: inline;
 }
 
-.overview-text-display{
-    font-family: TTregular;
-    font-size: 1.2rem;
-    position: relative;
-    left: -30px;
-    opacity: 100%;
-}
 
 .overview-img-none{
     display: none;
-    }
+}
     
 .overview-text-none{
-    font-family: TTregular;
-    font-size: 1.2rem;
-    position: relative;
-    left: -30px;
     display: none;
 }
 
@@ -171,7 +164,7 @@ display: initial;
     height: fit-content;
     cursor: pointer;
     position: relative;
-    top: 180px;
+    top: 190px;
     left: 20px;
     
     border: solid 1px #e74e4e;

@@ -15,7 +15,7 @@ export  function OverviewCanvas() {
         <Suspense fallback={null}>
           <pointLight position={[4, 10, 10]} intensity={0.7}/>
           <pointLight position={[-4, 10, 10]} intensity={0.3}/>
-          <MassaRoute/>
+          <MassaRoute />
           {/* <axesHelper/>
           <gridHelper/> */}
           <OrbitControls enableZoom={false}/>

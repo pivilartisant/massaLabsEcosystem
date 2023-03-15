@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export function OverviewScene(){
     const [activeClass, setActiveClass] = useState("overview-img-none")
-    const [activeBtn, setActiveBtn] = useState("help-container-display")
     // if helpBtn ? : ;
 
     const handleBtnClick =()=>{
